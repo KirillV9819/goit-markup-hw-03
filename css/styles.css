@@ -56,8 +56,9 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    /* margin-top: 24px; */
+    /* margin-bottom: 24px; */
+    border-bottom: 1px solid #ECECEC
 }
 .navigation{
     display: flex;
@@ -97,12 +98,20 @@ img{
     letter-spacing: 0.02em;
     color: var(--secondary-text-color)
 }
+.contacts-list{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .contact-link:hover,
 .contact-link:focus{
     color: var(--accent-color)
 }
 .contacts-list-item:not(:last-child){
     margin-right: 50px;
+}
+.nav-menu-list{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .logo{
     color: #000000;
@@ -264,29 +273,31 @@ img{
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.logo-footer{
+    .logo-footer{
+    display: block;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--primary-title-color);
+    margin-bottom: 20px;
+    /* margin-top: 60px;   */
+}
+.footer-content{
+    
 }
 .map-link{
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--primary-title-color)
-}
-.address-list{
-    margin-top: 20px;
+    color: var(--primary-title-color);
 }
 .address-link{
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 9px;
 }
 .address-link:hover,
 .address-link:focus{
@@ -299,6 +310,12 @@ img{
 .address{
     font-style: normal;
 }
+.address-list{
+    /* margin-bottom: 60px; */
+}
+.address-list-item:not(:last-child){
+    margin-bottom: 9px;
+}
 
 /* Portfolio */
 /* Project Types */
@@ -306,14 +323,12 @@ img{
 .projects-types-list{
     display: flex;
     justify-content: center;
-    /* align-items:stretch; */
     margin-bottom: 34px;
     height: 54px;
 }
 .menu-buttons:not(:last-child){
     margin-right: 8px;
 }
-
 .button:hover,
 .button:focus{
     color: var(--primary-title-color);
