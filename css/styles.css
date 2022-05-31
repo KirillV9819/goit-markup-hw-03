@@ -51,14 +51,23 @@ img{
     padding-left: 15px;
     padding-right: 15px;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /* Header */
 .page-header-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-top: 24px; */
-    /* margin-bottom: 24px; */
-    border-bottom: 1px solid #ECECEC
 }
 .navigation{
     display: flex;
@@ -76,6 +85,7 @@ img{
 }
 .header{
     background-color: var(--primary-title-color);
+    border-bottom: 1px solid #ECECEC
 }
 .menu-link{
     font-weight: 500;
@@ -170,12 +180,15 @@ img{
 .hero{
     background: var(--footer-hero-background-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 /* Our Features */
-.features{
+.section{
     padding-bottom: 94px;
     padding-top: 94px;
 }
+
 .features-list{
     display: flex;
     flex-wrap: wrap;
@@ -184,7 +197,7 @@ img{
     margin-right: 30px;
 }
 .features-list-item{
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
 }
 .features-list-item-title{
     font-weight: 700;
@@ -202,13 +215,13 @@ img{
     color: var(--secondary-text-color);
 }
 /* Our Services */
-.services{
-    padding-bottom: 94px;
+.services {
+    padding-top: 0px;
 }
 .services-title{
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.66;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
@@ -224,13 +237,11 @@ img{
 /*Team Title*/
 .team{
     background: var(--primary-backgroud-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 .team-title{
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.66;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
@@ -324,8 +335,7 @@ img{
 .projects-types-list{
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
-    height: 54px;
+    margin-bottom: 50px;
 }
 .menu-buttons:not(:last-child){
     margin-right: 8px;
@@ -383,5 +393,8 @@ img{
     margin-bottom: 30px;
 }
 .project-card-content{
-    margin: 20px 24px;
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+
 }
